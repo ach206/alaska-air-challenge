@@ -1,26 +1,19 @@
+/* GENERAL STYLES */
 .App {
   text-align: center;
+  background: #00385F;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 20%;
+  grid-template-rows: 10%;
 }
 
-.App-logo {
+
+/* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -30,4 +23,54 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* HEADER STYLES */
+
+.header-container {
+  width: inherit;
+  height: 12%;
+  /* border: 1px solid white; */
+}
+
+.logo-image {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  max-height: 30px;
+
+}
+
+/* MENU SLIDE CARDS */
+
+.menu-slide-container {
+  width: 95%;
+  max-height: 80vh;
+  height: 90vh;
+  position: absolute;
+  right: 0;
+  bottom: 2em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.slide-top {
+  position: relative;
+  background: #FFFFFF;
+  mix-blend-mode: soft-light;
+}
+.slide-middle {
+  position: absolute;
+  top: 10px;
+  left: auto;
+  background: #FFFFFF;
+  mix-blend-mode: soft-light;
+  
+}
+.slide-bottom {
+  position: absolute;
+  top: 20px;
+  left: auto;
+  background: #FFFFFF;
+  mix-blend-mode: soft-light;
+  
 }
