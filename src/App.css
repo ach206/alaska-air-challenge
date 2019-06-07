@@ -62,8 +62,9 @@ body, html {
 .nav-container {
   margin-top: 2em;
   position: absolute;
-  left: -999px;
-  width: 80vw;
+  left: -1299px;
+  width: fit-content;
+  padding-right: .5em;
   height: -webkit-fill-available;
   background: black;
   animation-name: hideNav;
@@ -71,12 +72,12 @@ body, html {
   z-index: 10;
 }
 @keyframes displayNav {
-  from {left:-999px;opacity:0;}
-  to {left:auto;opacity: 100%;}
+  from {left:-1299px;opacity:0;}
+  to {left:0;opacity: 100%;}
 }
 @keyframes hideNav {
   from {left:0px;}
-  to {left:-999px;}
+  to {left:-1299px;}
 }
 .nav-container-visible {
   margin-top: 2em;
@@ -113,12 +114,11 @@ body, html {
   margin-left: auto;
   animation-name: slideToTopL;
   animation-duration: 1s;
-
 }
 
 @keyframes slideToBtmR {
-  from {left:0px; top:10%;}
-  to {left:calc(100vw / 2); top:calc(100vh / 6);}
+  from {left:0; top:10%;}
+  to {left:0; top:15%;}
 }
 @keyframes slideToTopL {
   from {left:calc(100vw / 2); top:calc(100vh / 6);}
@@ -159,14 +159,14 @@ body, html {
   position: absolute;
   width: calc(375px * .9);
   height: calc(667px / 1.1);
-  top: calc(100vh / 6);
-  left: calc(100vw / 2);
+  top: 15%;
+  left: 0;
   animation-name: slideToBtmR;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
+/* https://css-tricks.com/snippets/css/stack-of-paper/ */
 .slide-top-clicked {
-  /* https://css-tricks.com/snippets/css/stack-of-paper/ */
   box-shadow:
   0 -1px 1px rgba(0,0,0,0.15),
   0 -10px 0 -5px #eee,
