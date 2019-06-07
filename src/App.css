@@ -1,10 +1,17 @@
 /* GENERAL STYLES */
+body, html {
+  max-height: 667px;
+  max-width: 375px;
+  margin-right: auto;
+    margin-left: auto;
+}
 #root {
   background-color: darkblue;
 }
 .App {
   text-align: center;
   background: #00385F;
+  position: absolute;
   height: 667px;
   width: 375px;
   display: grid;
@@ -12,6 +19,7 @@
   grid-template-rows: 10%;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 
 
@@ -35,10 +43,9 @@
 .header-container {
   position: absolute;
   width: inherit;
-  border: 1px solid white;
   height: 100%;
   max-height: 55px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .logo-image {
@@ -54,42 +61,74 @@
 .menu-slide-container {
   width: 95%;
   height: 80%;
-  position: absolute;
-  right: 0;
-  bottom: 2em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/* INITIAL LANDING STYLES FOR MENU SLIDES */
 .slides {
   position: absolute;
   width: calc(375px * .9);
-  height: calc(667px /1.5);
-  right: auto;
-  bottom: 50%;
-  /* display: none; */
-  /* top: 50%; */
-  /* left: 40px; */
+  height: calc(667px / 1.1);
+  box-sizing: content-box;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
-.slide-top, 
+
+.slide-top {
+  z-index: 3;
+  width: inherit;
+  height: inherit;
+  background: #FFFFFF;
+  mix-blend-mode: soft-light;
+}
+
+
+
+/* STYLES FOR WHEN MENU BUTTON IS ACTIVATED */
+
+/* //AFTER:once menu button activated */
+/* .slides {
+  position: absolute;
+  width: calc(375px * .9);
+  height: calc(667px / 1.1);
+  top: calc(100vh / 6);
+  left: calc(100vw / 30);
+} */
+
+/* .slide-top, 
 .slide-bottom, 
 .slide-middle {
-
-  position: relative;
+  
   background: #FFFFFF;
   mix-blend-mode: soft-light;
 }
 .slide-top {
-  /* top: 1em;
-  width: 300px;
-  left: 50%; */
+  /* https://css-tricks.com/snippets/css/stack-of-paper/ 
+  box-shadow:
+  0 -1px 1px rgba(0,0,0,0.15),
+  0 -10px 0 -5px #eee,
+  0 -10px 1px -4px rgba(0,0,0,0.15),
+  0 -20px 0 -10px #eee,
+  0 -20px 1px -9px rgba(0,0,0,0.15);
+  padding: 30px;
   z-index: 3;
 }
 .slide-middle {
   z-index: 2;
-  
+  display: none;
   
 }
 .slide-bottom {
   z-index: 1;
+  display: none;
 
+} */
+
+.fa-bars {
+  position: absolute;
+  top: 0.3em;
+  left: 0.4em;
+  color: white;
 }
