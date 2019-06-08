@@ -6,13 +6,22 @@ export default class SubMenuL3 extends Component {
         subL3.classList.toggle("lower-level-menu-clicked");
    }
     render() {
+        let cats = {
+            "Reporting": ["Injury Reporting", "ASAP Reporting", "General ASAP Information"],
+            "Agriculture and Customs" : ["I-9 Reporting", "General ASAP Information", "ASAP Reporting"],
+            "Known Crewmembers" : [],
+            "Product Safety" : ["Known Crewmembers", "Product Safety"]
+        }
         let nameOfClass = `menu-slide-container ${this.props.cName}`;
-        let categories = ["Reporting", "Agriculture and Customs", "Known Crewmembers", "Product Safety"];
-        let listItems = categories.map((n, i) =>
-        <li className="top-level-item" key={i} >
+        let categories = [];
+        for (let [key, value] of Object.entries(cats)) {
+            categories.push(key);
+        }
+            let listItems = categories.map((n, i) =>
+        <li className="sub-level-item" key={i} >
           {n}
         </li>
-        // onClick={(e) => this.openSubMenu(e.target)}
+        
       );
         return (
             <div className={nameOfClass}>
