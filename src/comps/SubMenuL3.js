@@ -18,7 +18,7 @@ export default class SubMenuL3 extends Component {
             <div className={nameOfClass}>
                 <i className="fas fa-arrow-left fa-2x" onClick={this.hideMenu}></i>
                 <ul>
-                    <h4>Grab Title From evt</h4>
+                    <h4>{this.props.menuItem}</h4>
                     {listItems}
                 </ul>
             </div>
