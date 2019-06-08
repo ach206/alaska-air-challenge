@@ -46,22 +46,32 @@ export default class App extends Component {
   }
 
   updateTopLvlMenuItem = (e) => {
-    this.setState({currentTopLvlMenuItem: e.innerHTML});
+    this.setState({currentTopLvlMenuItem: e.innerText});
+  }
+
+  aria = (e) => {
+    if (e.keyCode === 13) {
+      this.openMenu();
+    }
   }
   render() {
     return(
 
       <div className="App">
-      <Header/>
-      
-        <i className="fas fa-bars fa-2x" onClick={(e) => this.openMenu(e)}></i>
+       {/* alaka airlines logo in Header */}
+        <Header/>
 
-        <VertNavBar cName="main-nav" topLevel={this.state.topLevelCats} menuItem={this.updateTopLvlMenuItem}/>
+        {/* hambuger icon */}
+        <i className="fas fa-bars fa-2x" role="button" tabIndex="0" onKeyDown={this.aria} onClick={(e) => this.openMenu(e)}></i>
 
-      <SubMenuL3 cName="lower-level-menu" menuItem={this.state.currentTopLvlMenuItem}/>
+        {/* left side navigation menu */}
+        <VertNavBar cName="main-nav" topLevel={this.state.topLevelCats} menuItem={this.updateTopLvlMenuItem} aria={this.aria}/>
+      {/* the menu on the very buttom (level 3),hidden on init*/}
+      <SubMenuL3 cName="lower-level-menu" menuItem={this.state.currentTopLvlMenuItem} aria={this.aria}/>
 
+      {/* main focus on init, landing page slide  */}
       <div className="slides">
-        <SubMenu cName="slide-top" closeMenu={this.resetMenuLayout}/>
+        <SubMenu cName="slide-top" closeMenu={this.resetMenuLayout} aria={this.aria}/>
       </div>
     </div>
       )
