@@ -66,7 +66,7 @@ body, html {
   width: fit-content;
   padding-right: .5em;
   height: -webkit-fill-available;
-  background: black;
+  background: #00385f;
   animation-name: hideNav;
   animation-duration: 1s;
   z-index: 10;
@@ -102,7 +102,7 @@ body, html {
 }
 
 /*  -----INITIAL LANDING STYLES FOR MENU SLIDES ----- */
-.slides {
+.slides, .lower-level-menu {
   position: absolute;
   width: calc(375px * .9);
   height: calc(667px / 1.1);
@@ -113,7 +113,7 @@ body, html {
   margin-right: auto;
   margin-left: auto;
   animation-name: slideToTopL;
-  animation-duration: 1s;
+  animation-duration: 3s;
 }
 
 @keyframes slideToBtmR {
@@ -121,7 +121,7 @@ body, html {
   to {left:0; top:15%;}
 }
 @keyframes slideToTopL {
-  from {left:calc(100vw / 2); top:calc(100vh / 6);}
+  from {top:calc(100vh / 6);}
   to {left:0px; top:10%;}
 }
 @keyframes staggerSlideEffect {
@@ -186,3 +186,39 @@ body, html {
   color: white;
 }
 
+/* ----SUBMENU L3---- */
+
+.top-level-item:hover {
+  cursor: pointer;
+}
+
+.lower-level-menu {
+  z-index: 5;
+  position: absolute;
+  top: 10%;
+  left: auto;
+  right: 1200px;
+  color: white;
+  background: black;
+  animation: none;
+}
+.lower-level-menu-clicked {
+  animation-name: showSub3;
+  animation-duration: 1s;
+  right: 0;
+  z-index: 11;
+  top: 5%;
+  left: 0;
+  right: 0;
+}
+@keyframes showSub3 {
+  from {right:-1299px;opacity:0;}
+  to {right:0;opacity: 100%;}
+}
+
+
+.fa-arrow-left {
+  position: absolute;
+  top: .3em;
+  left: .3em;
+}
