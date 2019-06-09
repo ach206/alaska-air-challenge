@@ -99,6 +99,7 @@ body, html {
   margin-left: auto;
   animation-name: slideToTopL;
   animation-duration: 3s;
+  overflow-y: scroll;
 }
 
 @keyframes slideToBtmR {

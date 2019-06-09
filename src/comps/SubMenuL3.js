@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 let cats = {
     "Reporting": ["Injury Reporting", "ASAP Reporting", "General ASAP Information"],
     "Agriculture and Customs" : ["I-9 Reporting", "General ASAP Information", "ASAP Reporting"],
-    "Known Crewmembers" : [],
+    "Known Crewmembers" : ["ASAP Reporting"],
     "Product Safety" : ["Known Crewmembers", "Product Safety"]
 }
 export default class SubMenuL3 extends Component {
