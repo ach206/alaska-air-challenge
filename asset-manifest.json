@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.01c939c9.chunk.css",
-    "main.js": "/static/js/main.78c51dcf.chunk.js",
-    "main.js.map": "/static/js/main.78c51dcf.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.74286c36.chunk.js": "/static/js/2.74286c36.chunk.js",
-    "static/js/2.74286c36.chunk.js.map": "/static/js/2.74286c36.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.da3d8cce87e81c65724837c88d08a973.js": "/precache-manifest.da3d8cce87e81c65724837c88d08a973.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.01c939c9.chunk.css.map": "/static/css/main.01c939c9.chunk.css.map",
-    "static/media/alaska-air-logo.png": "/static/media/alaska-air-logo.d2f4261f.png"
+    "main.css": "/alaska-air-challenge/static/css/main.01c939c9.chunk.css",
+    "main.js": "/alaska-air-challenge/static/js/main.3bcd95db.chunk.js",
+    "main.js.map": "/alaska-air-challenge/static/js/main.3bcd95db.chunk.js.map",
+    "runtime~main.js": "/alaska-air-challenge/static/js/runtime~main.bf708549.js",
+    "runtime~main.js.map": "/alaska-air-challenge/static/js/runtime~main.bf708549.js.map",
+    "static/js/2.74286c36.chunk.js": "/alaska-air-challenge/static/js/2.74286c36.chunk.js",
+    "static/js/2.74286c36.chunk.js.map": "/alaska-air-challenge/static/js/2.74286c36.chunk.js.map",
+    "index.html": "/alaska-air-challenge/index.html",
+    "precache-manifest.eb4d7aa5fbd39a8027c0e86488caa5a5.js": "/alaska-air-challenge/precache-manifest.eb4d7aa5fbd39a8027c0e86488caa5a5.js",
+    "service-worker.js": "/alaska-air-challenge/service-worker.js",
+    "static/css/main.01c939c9.chunk.css.map": "/alaska-air-challenge/static/css/main.01c939c9.chunk.css.map",
+    "static/media/alaska-air-logo.png": "/alaska-air-challenge/static/media/alaska-air-logo.d2f4261f.png"
   }
 }
