@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/alaska-air-challenge/precache-manifest.eb4d7aa5fbd39a8027c0e86488caa5a5.js"
+  "/alaska-air-challenge/precache-manifest.3abdf9729c83bbd8226fcdcbe02582cf.js"
 );
 
 self.addEventListener('message', (event) => {
