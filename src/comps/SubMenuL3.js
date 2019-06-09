@@ -24,15 +24,13 @@ export default class SubMenuL3 extends Component {
         )
    }
 //    function to expand/display the assosciative sub-menu for the category that's selected
-   expandCategory = (e, i) => {
-       e.bubbles = true;
-    //    e.preventDefault();
-       console.log(e.currentTarget);
-       let subCats = e.currentTarget.children;
-       if (subCats.length > 0){
-    
-           for (let k = 0; k <= e.currentTarget.children.length; k++){
-               e.currentTarget.children[1].children[k].classList.toggle("display-span");
+   expandCategory = (e) => {
+    e.bubbles = true;
+    let container = document.querySelector(`#${e.currentTarget.id}`);
+    let items = container.children[1];
+       if (items.children.length > 0){
+           for (let k = 0; k < items.children.length; k++){
+            items.children[k].classList.toggle("display-span");
             }
         }
     }
@@ -54,7 +52,7 @@ export default class SubMenuL3 extends Component {
 // grabs the Title of each category and appends children elements that list sub-categories
         let listItems = categories.map((n, i) => 
             <div role="button" tabIndex="0" onKeyDown={this.aria}  key={i} className="item-container" id={`id${i}`}
-            onClick={(e) => this.expandCategory(e, i)}>
+            onClick={(e) => this.expandCategory(e)}>
                 <div className="sub-level-item">
                     <p>{n}</p>
                     <i className="fas fa-sort-down hidden-icon fa-lg"></i>
