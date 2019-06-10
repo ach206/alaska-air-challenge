@@ -164,6 +164,34 @@ body, html {
   animation-duration: 1s;
 }
 
+/* MENU BUTTON STYLES */
+@keyframes play60 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -1440px 0px;
+  }
+}
+.menu-btn-animate {
+  animation-duration: 1000ms;
+  animation-timing-function: steps(60);
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-image: url('images/sprite_60fps.svg');
+  position: absolute;
+  color: white;
+  left: auto;
+  right: 0.4em;
+  top: 0.4em;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.menu-btn-animate.play {
+  animation-name: play60;
+}
+
 .fa-bars {
   position: absolute;
   color: white;

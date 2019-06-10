@@ -4,6 +4,7 @@ import Header from './comps/Header';
 import SubMenu from './comps/SubMenu';
 import VertNavBar from './comps/VertNavBar';
 import SubMenuL3 from './comps/SubMenuL3';
+import menuBtn from './images/sprite_60fps.svg';
 
 
 export default class App extends Component {
@@ -16,7 +17,6 @@ export default class App extends Component {
      "ADMINISTRATION", 
      "HOTELS", 
      "MY BASE"],
-    resetLayout: false,
     currentTopLvlMenuItem: "",
   }
 
@@ -24,25 +24,19 @@ export default class App extends Component {
     let slides = document.querySelector('.slides');
     let vertNav = document.querySelector('.nav-container');
     let topSlide = document.querySelector('.slide-top');
+    let menuBtn = document.querySelector('.menu-btn-animate');
     if (this.state.hamburgerClicked === false){
       this.setState({hamburgerClicked: true});
+      menuBtn.classList.toggle("play");
     } else {
       this.setState({hamburgerClicked: false});
+      menuBtn.classList.toggle("play");
+      slides.classList.toggle("slides-clicked");
     }
     slides.classList.toggle("slides-clicked");
     topSlide.classList.toggle("slide-top-clicked");
     vertNav.classList.toggle("nav-container-visible");
     
-    if (this.state.resetLayout === true && this.state.hamburgerClicked === true) {
-      slides.classList.toggle("slides-clicked");
-      topSlide.classList.toggle("slide-top-clicked");
-      vertNav.classList.toggle("nav-container-visible");
-    }
-  }
-
-  resetMenuLayout = () => {
-    this.setState({resetLayout: true});
-    this.openMenu();
   }
 
   updateTopLvlMenuItem = (e) => {
@@ -62,7 +56,7 @@ export default class App extends Component {
         <Header/>
 
         {/* hambuger icon */}
-        <i className="fas fa-bars fa-2x" role="button" tabIndex="0" onKeyDown={this.aria} onClick={(e) => this.openMenu(e)}></i>
+        <img src={menuBtn} alt="menu button" className="menu-btn-animate" role="button" tabIndex="0" onKeyDown={this.aria} onClick={(e) => this.openMenu(e)}></img>
 
         {/* left side navigation menu */}
         <VertNavBar cName="main-nav" topLevel={this.state.topLevelCats} menuItem={this.updateTopLvlMenuItem} aria={this.aria}/>
@@ -71,7 +65,7 @@ export default class App extends Component {
 
       {/* main focus on init, landing page slide  */}
       <div className="slides">
-        <SubMenu cName="slide-top" closeMenu={this.resetMenuLayout} aria={this.aria}/>
+        <SubMenu cName="slide-top" closeMenu={this.openMenu} aria={this.aria}/>
       </div>
     </div>
       )
