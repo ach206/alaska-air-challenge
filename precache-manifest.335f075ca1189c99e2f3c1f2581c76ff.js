@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f42f637e2111e21f2ac19813a960b4ac",
+    "revision": "d359b553c71207d47a7b3a22df30a41a",
     "url": "/alaska-air-challenge/index.html"
   },
   {
-    "revision": "4af4a1444320616ac12a",
-    "url": "/alaska-air-challenge/static/css/main.ce82d611.chunk.css"
+    "revision": "78c519cbe7d629c99e0e",
+    "url": "/alaska-air-challenge/static/css/main.80d8cdc7.chunk.css"
   },
   {
     "revision": "30661dc8b5d70ddac39b",
     "url": "/alaska-air-challenge/static/js/2.d10b9cf5.chunk.js"
   },
   {
-    "revision": "4af4a1444320616ac12a",
+    "revision": "78c519cbe7d629c99e0e",
     "url": "/alaska-air-challenge/static/js/main.eb9f166f.chunk.js"
   },
   {

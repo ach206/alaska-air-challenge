@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/alaska-air-challenge/static/css/main.ce82d611.chunk.css",
+    "main.css": "/alaska-air-challenge/static/css/main.80d8cdc7.chunk.css",
     "main.js": "/alaska-air-challenge/static/js/main.eb9f166f.chunk.js",
     "main.js.map": "/alaska-air-challenge/static/js/main.eb9f166f.chunk.js.map",
     "runtime~main.js": "/alaska-air-challenge/static/js/runtime~main.bf708549.js",
@@ -8,9 +8,9 @@
     "static/js/2.d10b9cf5.chunk.js": "/alaska-air-challenge/static/js/2.d10b9cf5.chunk.js",
     "static/js/2.d10b9cf5.chunk.js.map": "/alaska-air-challenge/static/js/2.d10b9cf5.chunk.js.map",
     "index.html": "/alaska-air-challenge/index.html",
-    "precache-manifest.2a4e56759727e02af52e7f524939f9b1.js": "/alaska-air-challenge/precache-manifest.2a4e56759727e02af52e7f524939f9b1.js",
+    "precache-manifest.335f075ca1189c99e2f3c1f2581c76ff.js": "/alaska-air-challenge/precache-manifest.335f075ca1189c99e2f3c1f2581c76ff.js",
     "service-worker.js": "/alaska-air-challenge/service-worker.js",
-    "static/css/main.ce82d611.chunk.css.map": "/alaska-air-challenge/static/css/main.ce82d611.chunk.css.map",
+    "static/css/main.80d8cdc7.chunk.css.map": "/alaska-air-challenge/static/css/main.80d8cdc7.chunk.css.map",
     "static/media/alaska-air-logo.png": "/alaska-air-challenge/static/media/alaska-air-logo.d2f4261f.png",
     "static/media/App.css": "/alaska-air-challenge/static/media/sprite_60fps.27a86b86.svg"
   }
